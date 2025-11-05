@@ -1,3 +1,4 @@
+/* index.html */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -62,4 +63,46 @@ body {
   margin: 10px 0;
   background-color: #ffffff;
   font-size: large;
+}
+
+/* COG.html */
+body {
+  background-color: gray;
+}
+.caseHeader {
+  background-image: linear-gradient(to bottom, rgb(255, 0, 0), rgb(0, 0, 0));
+  color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+  font-size: large;
+}
+.navBar {
+  margin: 10px auto;
+  border: #35424a 2px solid;
+  width: max-content;
+}
+.backButton {
+  background-color: #35424a;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: medium;
+  cursor: pointer;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.footerContainer {
+  background-color: rgb(88, 88, 88);
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
