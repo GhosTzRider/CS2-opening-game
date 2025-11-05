@@ -28,7 +28,7 @@ body {
   padding: 10px;
   margin: 10px 0;
   background-color: bisque;
-  min-height: 75vh;
+  min-height: 68vh;
 }
 .openGame {
   border: #35424a 2px solid;
@@ -101,7 +101,7 @@ body {
   color: #ffffff;
   text-align: center;
   padding: 10px 0;
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
