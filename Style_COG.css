@@ -1,0 +1,168 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .caseHeader {
+    background-image: linear-gradient(to bottom, rgb(255, 0, 0), rgb(0, 0, 0));
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: large;
+  }
+  
+  .navBar {
+    margin: 10px auto;
+    border: #35424a 2px solid;
+    width: max-content;
+  }
+  
+  .backButton {
+    background-color: #35424a;
+    color: #ffffff;
+    border: none;
+    padding: 5px 20px;
+    font-size: medium;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  
+  .Spin_that_wheel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  .spinContainer {
+    position: relative;
+    width: 750px;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .wheel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 700px;
+    height: 700px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    box-shadow: 0 0 0 5px #333, 0 0 0 15px #fff, 0 0 0 18px #111;
+  }
+  
+  .number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: rotate(calc((360deg / 15) * var(--i)))
+               translate(-50%, -50%)
+               translateY(-340px)
+               rotate(calc(-1 * (360deg / 15) * var(--i)));
+    transform-origin: center;
+  }
+  
+  .number img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    background: #000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  .spinButton {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: #333;
+    border: 4px solid rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .spinButton::before {
+    content: "";
+    position: absolute;
+    top: -28px;
+    width: 20px;
+    height: 30px;
+    background: #fff;
+    clip-path: polygon(50% 0%, 15% 100%, 85% 100%);
+  }
+  
+  .footerContainer {
+    background-color: rgb(88, 88, 88);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: auto;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .spinContainer .wheel .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background: var(--clr);
+    transform-origin: 100% 100%;
+    transform: rotate(calc((360deg / var(--total)) * var(--i)));
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .spinContainer .wheel .number span img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  .spinContainer .wheel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #333, 0 0 0 15px #fff, 0 0 0 18px #111;
+    overflow: hidden;
+    --total: 15;
+  } 
