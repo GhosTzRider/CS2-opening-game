@@ -1,7 +1,6 @@
-/* index.html */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #333;
   margin: 0;
   padding: 0;
 }
@@ -59,7 +58,45 @@ body {
 .tradeUp {
   border: #35424a 2px solid;
   padding: 10px;
-  margin: 10px 0;
+  margin: -10px 0;
   background-color: #ffffff;
   font-size: large;
+}
+.footerContainer {
+  background-color: rgb(88, 88, 88);
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  margin-top: auto;
+  position: relative;
+  z-index: 10;
+}
+
+.chromaCase img {
+  width: 600px;
+  height: auto;
+  position: fixed;
+  top: 41%;
+  left: 9%;
+  border: 2px solid transparent;
+  transition: transform 0.5s;
+}
+
+.TradeUp img {
+  width: 600px;
+  height: auto;
+  position: fixed;
+  top: 45%;
+  left: 61%;
+  transition: transform 0.5s;
+}
+.chromaCase img:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
+  border-color: bisque;
+}
+.chromaCase img:active {
+  transform: scale(0.95);
+  transition: transform 0.1s;
 }
