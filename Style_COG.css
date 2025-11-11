@@ -107,7 +107,8 @@ html, body {
   .spinButton::before {
     content: "";
     position: absolute;
-    top: -34px;
+    top: -306px;
+    rotate: 180deg;
     width: 18px;
     height: 28px;
     background: #fff;
